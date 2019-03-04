@@ -3,7 +3,7 @@ def b(x,y):
     b_xy = (
         ((y.real + 1j*y.imag)*(x.real - 1j*x.imag)).sum()
     / 
-        ((x.real + 1j*x.imag)*(y.real - 1j*y.imag)).sum()
+        ((x.real + 1j*x.imag)*(x.real - 1j*x.imag)).sum()
     )
     return b_xy;
 
